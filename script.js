@@ -60,15 +60,14 @@ if (contactForm) {
 
 // ── Fade-in on scroll (Intersection Observer) ──────────────────────────
 const fadeEls = document.querySelectorAll(
-  '.skill-card, .project-card, .about__stats .stat'
+  '.skill-card, .project-card, .about__stats .stat, .timeline__item'
 );
 
 const observer = new IntersectionObserver(
   entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
+        entry.target.classList.add('fade-in--visible');
         observer.unobserve(entry.target);
       }
     });
@@ -77,8 +76,49 @@ const observer = new IntersectionObserver(
 );
 
 fadeEls.forEach(el => {
-  el.style.opacity = '0';
-  el.style.transform = 'translateY(20px)';
-  el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+  el.classList.add('fade-in');
   observer.observe(el);
 });
+
+// ── Back-to-top button ──────────────────────────────────────────────────
+const backToTop = document.getElementById('backToTop');
+if (backToTop) {
+  window.addEventListener('scroll', () => {
+    backToTop.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
+// ── Hero typing animation ──────────────────────────────────────────────
+const typingEl = document.getElementById('typingText');
+if (typingEl) {
+  const words = typingEl.getAttribute('data-words').split(',').map(w => w.trim());
+  let wordIdx = 0;
+  let charIdx = 0;
+  let deleting = false;
+
+  function type() {
+    const current = words[wordIdx];
+    if (deleting) {
+      charIdx--;
+    } else {
+      charIdx++;
+    }
+    typingEl.textContent = current.slice(0, charIdx);
+
+    let delay = deleting ? 60 : 100;
+    if (!deleting && charIdx === current.length) {
+      delay = 1800;
+      deleting = true;
+    } else if (deleting && charIdx === 0) {
+      deleting = false;
+      wordIdx = (wordIdx + 1) % words.length;
+      delay = 400;
+    }
+    setTimeout(type, delay);
+  }
+  type();
+}
