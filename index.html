@@ -19,6 +19,7 @@
         <ul class="navbar__links" id="navMenu" role="list">
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -47,7 +48,7 @@
       <p class="hero__greeting">👋 Hello, World</p>
       <h1 class="hero__name">I'm <span style="color: var(--clr-primary);">Your Name</span></h1>
       <p class="hero__tagline">
-        A passionate <span>Full‑Stack Developer</span> &amp; <span>UI Designer</span>
+        A passionate <span id="typingText" data-words="Full‑Stack Developer,UI Designer,Problem Solver">Full‑Stack Developer</span><span class="cursor" aria-hidden="true">|</span>
       </p>
       <p class="hero__description">
         I build clean, fast, and user-friendly digital experiences.
@@ -132,6 +133,81 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Experience ─────────────────────────────────────────────── -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <h2 class="section__title">Experience</h2>
+      <p class="section__subtitle">My professional journey so far</p>
+
+      <div class="timeline">
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Senior Full-Stack Developer</h3>
+                <p class="timeline__company">Tech Company Inc.</p>
+              </div>
+              <span class="timeline__date">2022 – Present</span>
+            </div>
+            <p class="timeline__desc">
+              Led development of a customer-facing SaaS platform serving 10k+ users.
+              Designed and implemented microservices architecture, improved page load
+              times by 40%, and mentored junior developers.
+            </p>
+            <div class="timeline__tags">
+              <span>React</span><span>Node.js</span><span>PostgreSQL</span><span>AWS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Frontend Developer</h3>
+                <p class="timeline__company">Creative Agency</p>
+              </div>
+              <span class="timeline__date">2020 – 2022</span>
+            </div>
+            <p class="timeline__desc">
+              Built and maintained responsive web applications for a diverse client base.
+              Collaborated closely with designers to translate Figma mockups into pixel-
+              perfect, accessible interfaces.
+            </p>
+            <div class="timeline__tags">
+              <span>Vue.js</span><span>TypeScript</span><span>Tailwind CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Junior Developer</h3>
+                <p class="timeline__company">Startup XYZ</p>
+              </div>
+              <span class="timeline__date">2019 – 2020</span>
+            </div>
+            <p class="timeline__desc">
+              Contributed to the development of a mobile-first e-commerce app.
+              Gained hands-on experience with REST APIs, state management, and
+              agile development workflows.
+            </p>
+            <div class="timeline__tags">
+              <span>JavaScript</span><span>React</span><span>Firebase</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -352,6 +428,11 @@
       </p>
     </div>
   </footer>
+
+  <!-- ── Back to top ─────────────────────────────────────────────── -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
 
   <script src="script.js"></script>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
