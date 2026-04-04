@@ -1,4 +1,18 @@
 /* ===========================
+   Fade-in animation
+   =========================== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===========================
    Reset & Base Styles
    =========================== */
 *, *::before, *::after {
@@ -729,10 +743,6 @@ ul {
 
   .about__avatar-wrap {
     order: -1;
-  }
-
-  .about__stats {
-    grid-template-columns: repeat(3, 1fr);
   }
 
   .hero__cta {
