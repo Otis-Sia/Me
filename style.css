@@ -677,6 +677,44 @@ ul {
   min-height: 130px;
 }
 
+/* Formspree feedback */
+.contact__fs-success,
+.contact__fs-error {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.1rem;
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.contact__fs-success {
+  background: rgba(63, 185, 80, 0.12);
+  border: 1px solid rgba(63, 185, 80, 0.35);
+  color: #3fb950;
+}
+
+.contact__fs-error {
+  background: rgba(247, 129, 102, 0.12);
+  border: 1px solid rgba(247, 129, 102, 0.35);
+  color: var(--clr-accent);
+}
+
+.contact__field-error {
+  font-size: 0.78rem;
+  color: var(--clr-accent);
+  min-height: 1em;
+}
+
+/* Formspree sets aria-invalid on errored fields */
+.form-group input[aria-invalid="true"],
+.form-group textarea[aria-invalid="true"] {
+  border-color: var(--clr-accent);
+  box-shadow: 0 0 0 3px rgba(247, 129, 102, 0.15);
+}
+
 /* ===========================
    Fade-in Animation Classes
    =========================== */
@@ -878,11 +916,34 @@ ul {
 }
 
 /* ===========================
-   Resume Embed
+   Resume
    =========================== */
+.resume__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+  margin-top: 2rem;
+}
+
+.resume__info {
+  position: sticky;
+  top: 100px;
+}
+
+.resume__description {
+  color: var(--clr-muted);
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.resume__cta {
+  display: flex;
+  gap: 1rem;
+}
+
 .resume__wrapper {
   width: 100%;
-  margin-top: 2.5rem;
   border-radius: var(--radius);
   overflow: hidden;
   border: 1px solid var(--clr-border);
@@ -925,6 +986,8 @@ ul {
   position: relative;
   padding-bottom: 141.4%;
   height: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .resume__embed iframe {
@@ -963,7 +1026,8 @@ ul {
   }
 
   .about__grid,
-  .contact__grid {
+  .contact__grid,
+  .resume__layout {
     grid-template-columns: 1fr;
     gap: 2.5rem;
   }

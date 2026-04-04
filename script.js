@@ -39,24 +39,6 @@ navMenu.querySelectorAll('a').forEach(link => {
   });
 });
 
-// ── Contact form: simple feedback ──────────────────────────────────────
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-  contactForm.addEventListener('submit', e => {
-    e.preventDefault();
-    const btn = contactForm.querySelector('button[type="submit"]');
-    const original = btn.textContent;
-    btn.textContent = 'Message sent ✓';
-    btn.disabled = true;
-    btn.style.opacity = '0.7';
-    setTimeout(() => {
-      btn.textContent = original;
-      btn.disabled = false;
-      btn.style.opacity = '';
-      contactForm.reset();
-    }, 3000);
-  });
-}
 
 // ── Fade-in on scroll (Intersection Observer) ──────────────────────────
 const fadeEls = document.querySelectorAll(

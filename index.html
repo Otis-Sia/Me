@@ -421,33 +421,42 @@
   <!-- ── Resume ────────────────────────────────────────────────── -->
   <section class="resume-section section" id="resume">
     <div class="container">
-      <h2 class="section__title">Resume</h2>
-      <p class="section__subtitle">My full CV — view or download below</p>
-
-      <div class="resume__wrapper">
-        <div class="resume__toolbar">
-          <span class="resume__label">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-            Elvis Sia — CV
-          </span>
-          <a
-            href="https://docs.google.com/document/d/e/2PACX-1vQm4muPLoW6gG-BreVreDLnubfq9Gw2nJzO1q_rDjUMTCo2kdi7pGKKkv7CuSvFfdiZ6FHECjY0mCHn/pub?output=pdf"
-            download="Elvis_Sia_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn--primary resume__download-btn"
-            id="resumeDownloadBtn"
-          >
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="15" height="15"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download PDF
-          </a>
+      <div class="resume__layout">
+        <div class="resume__info">
+          <h2 class="section__title">Resume</h2>
+          <p class="section__subtitle">My professional background</p>
+          <p class="resume__description">
+            Here is a comprehensive overview of my education, experience, and skills. 
+            Feel free to view my full CV directly on this page or download a PDF copy for your records. 
+            I'm constantly looking for opportunities to apply my technical skills and grow as an IT professional.
+          </p>
+          <div class="resume__cta">
+            <a href="https://docs.google.com/document/d/e/2PACX-1vQm4muPLoW6gG-BreVreDLnubfq9Gw2nJzO1q_rDjUMTCo2kdi7pGKKkv7CuSvFfdiZ6FHECjY0mCHn/pub?output=pdf"
+               download="Elvis_Sia_Resume.pdf"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn--primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="16" height="16"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download PDF Version
+            </a>
+          </div>
         </div>
-        <div class="resume__embed">
-          <iframe
-            src="https://docs.google.com/document/d/e/2PACX-1vQm4muPLoW6gG-BreVreDLnubfq9Gw2nJzO1q_rDjUMTCo2kdi7pGKKkv7CuSvFfdiZ6FHECjY0mCHn/pub?embedded=true"
-            title="Elvis Sia – Resume"
-            allowfullscreen
-          ></iframe>
+
+        <div class="resume__wrapper">
+          <div class="resume__toolbar">
+            <span class="resume__label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Elvis Sia — CV Preview
+            </span>
+          </div>
+          <div class="resume__embed">
+            <iframe
+              src="https://docs.google.com/document/d/e/2PACX-1vQm4muPLoW6gG-BreVreDLnubfq9Gw2nJzO1q_rDjUMTCo2kdi7pGKKkv7CuSvFfdiZ6FHECjY0mCHn/pub?embedded=true"
+              title="Elvis Sia – Resume"
+              scrolling="yes"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>
@@ -489,20 +498,30 @@
           </ul>
         </div>
 
+        <!-- Formspree success / error banners -->
+        <div data-fs-success class="contact__fs-success" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          Thanks! Your message has been sent — I'll get back to you soon.
+        </div>
+        <div data-fs-error class="contact__fs-error" hidden></div>
+
         <form class="contact__form" id="contactForm" novalidate>
           <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required />
+            <input type="text" id="name" name="name" placeholder="Your Name" required data-fs-field />
+            <span data-fs-error="name" class="contact__field-error"></span>
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            <input type="email" id="email" name="email" placeholder="your@email.com" required data-fs-field />
+            <span data-fs-error="email" class="contact__field-error"></span>
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Tell me about your project or opportunity…" required></textarea>
+            <textarea id="message" name="message" placeholder="Tell me about your project or opportunity…" required data-fs-field></textarea>
+            <span data-fs-error="message" class="contact__field-error"></span>
           </div>
-          <button type="submit" class="btn btn--primary" style="align-self: flex-start;">
+          <button type="submit" class="btn btn--primary" style="align-self: flex-start;" data-fs-submit-btn>
             Send Message
           </button>
         </form>
@@ -527,5 +546,12 @@
 
   <script src="script.js"></script>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <!-- Formspree Ajax integration -->
+  <script>
+    window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+    formspree('initForm', { formElement: '#contactForm', formId: 'xdappeag' });
+  </script>
+  <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 </html>
