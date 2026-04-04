@@ -8,15 +8,15 @@
 }
 
 :root {
-  --clr-bg: #0d1117;
-  --clr-surface: #161b22;
-  --clr-border: #30363d;
-  --clr-primary: #58a6ff;
-  --clr-primary-hover: #79b8ff;
-  --clr-accent: #f78166;
-  --clr-text: #e6edf3;
-  --clr-muted: #8b949e;
-  --clr-card: #1c2128;
+  --clr-bg: #0a0a0a;
+  --clr-surface: #111111;
+  --clr-border: #2a2a2a;
+  --clr-primary: #ff6b2b;
+  --clr-primary-hover: #ff8c55;
+  --clr-accent: #ffffff;
+  --clr-text: #f0f0f0;
+  --clr-muted: #888888;
+  --clr-card: #161616;
   --radius: 8px;
   --transition: 0.25s ease;
   --max-w: 1100px;
@@ -84,9 +84,9 @@ ul {
   border-radius: 2rem;
   font-size: 0.78rem;
   font-weight: 600;
-  background: rgba(88, 166, 255, 0.12);
+  background: rgba(255, 107, 43, 0.12);
   color: var(--clr-primary);
-  border: 1px solid rgba(88, 166, 255, 0.3);
+  border: 1px solid rgba(255, 107, 43, 0.3);
 }
 
 .btn {
@@ -104,14 +104,14 @@ ul {
 
 .btn--primary {
   background: var(--clr-primary);
-  color: #0d1117;
+  color: #ffffff;
 }
 
 .btn--primary:hover {
   background: var(--clr-primary-hover);
-  color: #0d1117;
+  color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(88, 166, 255, 0.35);
+  box-shadow: 0 6px 20px rgba(255, 107, 43, 0.35);
 }
 
 .btn--outline {
@@ -121,7 +121,7 @@ ul {
 }
 
 .btn--outline:hover {
-  background: rgba(88, 166, 255, 0.1);
+  background: rgba(255, 107, 43, 0.1);
   transform: translateY(-2px);
 }
 
@@ -139,9 +139,9 @@ ul {
 }
 
 .btn--icon:hover {
-  background: rgba(88, 166, 255, 0.1);
+  background: rgba(255, 107, 43, 0.1);
   color: var(--clr-primary);
-  border-color: rgba(88, 166, 255, 0.3);
+  border-color: rgba(255, 107, 43, 0.3);
 }
 
 /* ===========================
@@ -153,7 +153,7 @@ ul {
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(13, 17, 23, 0.85);
+  background: rgba(10, 10, 10, 0.85);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--clr-border);
   transition: background var(--transition);
@@ -244,7 +244,7 @@ ul {
   right: -5%;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(88, 166, 255, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 107, 43, 0.08) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -314,7 +314,7 @@ ul {
 .hero__socials a:hover {
   border-color: var(--clr-primary);
   color: var(--clr-primary);
-  background: rgba(88, 166, 255, 0.08);
+  background: rgba(255, 107, 43, 0.08);
   transform: translateY(-2px);
 }
 
@@ -480,7 +480,7 @@ ul {
   width: 40px;
   height: 40px;
   border-radius: var(--radius);
-  background: rgba(88, 166, 255, 0.12);
+  background: rgba(255, 107, 43, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -510,9 +510,9 @@ ul {
 }
 
 .skill-tags span:hover {
-  background: rgba(88, 166, 255, 0.1);
+  background: rgba(255, 107, 43, 0.1);
   color: var(--clr-primary);
-  border-color: rgba(88, 166, 255, 0.3);
+  border-color: rgba(255, 107, 43, 0.3);
 }
 
 /* ===========================
@@ -584,9 +584,9 @@ ul {
   padding: 0.15rem 0.55rem;
   border-radius: 4px;
   font-size: 0.72rem;
-  background: rgba(88, 166, 255, 0.1);
+  background: rgba(255, 107, 43, 0.1);
   color: var(--clr-primary);
-  border: 1px solid rgba(88, 166, 255, 0.25);
+  border: 1px solid rgba(255, 107, 43, 0.25);
 }
 
 .project-card__links {
@@ -610,7 +610,7 @@ ul {
 .project-card__link:hover {
   color: var(--clr-primary);
   border-color: var(--clr-primary);
-  background: rgba(88, 166, 255, 0.08);
+  background: rgba(255, 107, 43, 0.08);
 }
 
 .project-card__link svg {
@@ -689,12 +689,15 @@ ul {
 .form-group input:focus,
 .form-group textarea:focus {
   border-color: var(--clr-primary);
-  box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.15);
+  box-shadow: 0 0 0 3px rgba(255, 107, 43, 0.15);
 }
 
 .form-group textarea {
   min-height: 130px;
 }
+
+/* Ensure [hidden] attribute is respected even when display is set by CSS */
+[hidden] { display: none !important; }
 
 /* Formspree feedback */
 .contact__fs-success,
@@ -805,7 +808,7 @@ ul {
 
 .timeline__item:hover .timeline__dot {
   background: var(--clr-primary);
-  box-shadow: 0 0 0 4px rgba(88, 166, 255, 0.2);
+  box-shadow: 0 0 0 4px rgba(255, 107, 43, 0.2);
 }
 
 .timeline__card {
@@ -869,9 +872,9 @@ ul {
   padding: 0.15rem 0.55rem;
   border-radius: 4px;
   font-size: 0.72rem;
-  background: rgba(88, 166, 255, 0.1);
+  background: rgba(255, 107, 43, 0.1);
   color: var(--clr-primary);
-  border: 1px solid rgba(88, 166, 255, 0.25);
+  border: 1px solid rgba(255, 107, 43, 0.25);
 }
 
 /* ===========================
@@ -886,7 +889,7 @@ ul {
   height: 44px;
   border-radius: 50%;
   background: var(--clr-primary);
-  color: #0d1117;
+  color: #ffffff;
   border: none;
   cursor: pointer;
   display: flex;
@@ -896,7 +899,7 @@ ul {
   transform: translateY(16px);
   pointer-events: none;
   transition: opacity var(--transition), transform var(--transition), background var(--transition), box-shadow var(--transition);
-  box-shadow: 0 4px 14px rgba(88, 166, 255, 0.4);
+  box-shadow: 0 4px 14px rgba(255, 107, 43, 0.4);
 }
 
 .back-to-top.visible {
@@ -907,7 +910,7 @@ ul {
 
 .back-to-top:hover {
   background: var(--clr-primary-hover);
-  box-shadow: 0 6px 20px rgba(88, 166, 255, 0.55);
+  box-shadow: 0 6px 20px rgba(255, 107, 43, 0.55);
 }
 
 .back-to-top svg {
