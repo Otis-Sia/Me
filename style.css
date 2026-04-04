@@ -125,6 +125,25 @@ ul {
   transform: translateY(-2px);
 }
 
+.btn--icon {
+  background: transparent;
+  border: 1px solid var(--clr-border);
+  color: var(--clr-muted);
+  cursor: pointer;
+  padding: 0.4rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition);
+}
+
+.btn--icon:hover {
+  background: rgba(88, 166, 255, 0.1);
+  color: var(--clr-primary);
+  border-color: rgba(88, 166, 255, 0.3);
+}
+
 /* ===========================
    Navigation
    =========================== */
@@ -949,6 +968,26 @@ ul {
   border: 1px solid var(--clr-border);
   background: var(--clr-card);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Collapsed state (Picture-in-Picture) */
+.resume__wrapper.is-collapsed {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 250px;
+  z-index: 1000;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+  border-color: var(--clr-primary);
+  transform: translateY(0);
+}
+
+.resume__wrapper.is-collapsed .icon-minimize {
+  display: none;
+}
+.resume__wrapper.is-collapsed .icon-maximize {
+  display: block !important;
 }
 
 .resume__toolbar {

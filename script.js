@@ -104,3 +104,14 @@ if (typingEl) {
   }
   type();
 }
+
+// ── Resume collapse toggle ──────────────────────────────────────────────
+const resumeCollapseBtn = document.getElementById('resumeCollapseBtn');
+if (resumeCollapseBtn) {
+  const resumeWrapper = document.querySelector('.resume__wrapper');
+  resumeCollapseBtn.addEventListener('click', () => {
+    resumeWrapper.classList.toggle('is-collapsed');
+    const isCollapsed = resumeWrapper.classList.contains('is-collapsed');
+    resumeCollapseBtn.setAttribute('aria-expanded', !isCollapsed);
+  });
+}
