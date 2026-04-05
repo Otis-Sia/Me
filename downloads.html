@@ -18,13 +18,11 @@
 
       <nav>
         <ul class="navbar__links" id="navMenu" role="list">
-          <li><a href="index.html#hero">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#experience">Experience</a></li>
-          <li><a href="index.html#skills">Skills</a></li>
-          <li><a href="index.html#projects">Projects</a></li>
-          <li><a href="index.html#resume">Resume</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="scouting.html">Scouting</a></li>
+          <li><a href="contact.html">Contact</a></li>
           <li><a href="downloads.html" class="active">Downloads</a></li>
         </ul>
       </nav>
@@ -194,6 +192,53 @@
     </div>
   </section>
 
+  <!-- ── Resume Preview ──────────────────────────────────────── -->
+  <section class="resume-section section" id="resume" style="background: var(--clr-surface);">
+    <div class="container">
+      <div class="resume__layout">
+        <div class="resume__info">
+          <h2 class="section__title">Resume</h2>
+          <p class="section__subtitle">My professional background</p>
+          <p class="resume__description">
+            A comprehensive overview of my education, experience, and skills.
+            View my full CV below or download a PDF copy for your records.
+          </p>
+          <div class="resume__cta">
+            <a href="https://docs.google.com/document/d/e/2PACX-1vQm4muPLoW6gG-BreVreDLnubfq9Gw2nJzO1q_rDjUMTCo2kdi7pGKKkv7CuSvFfdiZ6FHECjY0mCHn/pub?output=pdf"
+               download="Elvis_Sia_Resume.pdf"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn--primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="16" height="16"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download PDF Version
+            </a>
+          </div>
+        </div>
+
+        <div class="resume__wrapper">
+          <div class="resume__toolbar">
+            <span class="resume__label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Elvis Sia — CV Preview
+            </span>
+            <button class="btn btn--icon btn--collapse" id="resumeCollapseBtn" aria-label="Toggle Resume Size" title="Minimize/Maximize">
+               <svg class="icon-minimize" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"/></svg>
+               <svg class="icon-maximize" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" style="display:none;"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+          <div class="resume__embed">
+            <iframe
+              src="https://docs.google.com/document/d/e/2PACX-1vQm4muPLoW6gG-BreVreDLnubfq9Gw2nJzO1q_rDjUMTCo2kdi7pGKKkv7CuSvFfdiZ6FHECjY0mCHn/pub?embedded=true"
+              title="Elvis Sia – Resume"
+              scrolling="yes"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ── Footer ───────────────────────────────────────────────── -->
   <footer class="footer">
     <div class="container">
@@ -210,6 +255,5 @@
   </button>
 
   <script src="script.js"></script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body>
+  </body>
 </html>

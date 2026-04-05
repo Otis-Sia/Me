@@ -68,6 +68,11 @@ fadeEls.forEach(el => {
   observer.observe(el);
 });
 
+// Also observe any elements that already have .fade-in applied directly in HTML
+document.querySelectorAll('.fade-in').forEach(el => {
+  observer.observe(el);
+});
+
 // ── Back-to-top button ──────────────────────────────────────────────────
 const backToTop = document.getElementById('backToTop');
 if (backToTop) {
@@ -121,3 +126,40 @@ if (resumeCollapseBtn) {
     resumeCollapseBtn.setAttribute('aria-expanded', !isCollapsed);
   });
 }
+
+// ── Formspree Contact Form Init ───────────────────────────────────────────
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+  formspree('initForm', { formElement: '#contactForm', formId: 'xdappeag' });
+}
+
+// ── Animated Counters (Scouting Page) ───────────────────────────────────
+const counters = document.querySelectorAll('.scout-stat__number[data-target]');
+if (counters.length > 0) {
+  const countObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting || entry.target.dataset.counted) return;
+      entry.target.dataset.counted = true;
+      const target = +entry.target.dataset.target;
+      const suffix = entry.target.dataset.suffix || '';
+      const duration = 1400;
+      const step = Math.max(1, Math.floor(duration / target));
+      let current = 0;
+      const timer = setInterval(() => {
+        current++;
+        entry.target.textContent = current + suffix;
+        if (current >= target) clearInterval(timer);
+      }, step);
+    });
+  }, { threshold: 0.5 });
+
+  counters.forEach(c => countObserver.observe(c));
+}
+
+// ── Global Footer Year ──────────────────────────────────────────────────
+const yearEl = document.getElementById('year');
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}
+
