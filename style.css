@@ -1246,7 +1246,7 @@ ul {
 }
 
 .download-card__type,
-.download-card__size {
+.download-card__source {
   padding: 0.15rem 0.55rem;
   border-radius: 4px;
   font-size: 0.72rem;
@@ -1259,7 +1259,7 @@ ul {
   border: 1px solid rgba(255, 107, 43, 0.25);
 }
 
-.download-card__size {
+.download-card__source {
   background: rgba(255, 255, 255, 0.05);
   color: var(--clr-muted);
   border: 1px solid var(--clr-border);
