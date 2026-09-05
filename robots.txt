@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://otis-sia.github.io/Me/sitemap.xml
+Sitemap: https://sia.cepine.com/sitemap.xml

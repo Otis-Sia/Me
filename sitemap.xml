@@ -4,43 +4,43 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
-    <loc>https://otis-sia.github.io/Me/</loc>
+    <loc>https://sia.cepine.com/</loc>
     <lastmod>2026-09-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://otis-sia.github.io/Me/index.html</loc>
+    <loc>https://sia.cepine.com/index.html</loc>
     <lastmod>2026-09-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://otis-sia.github.io/Me/about.html</loc>
+    <loc>https://sia.cepine.com/about.html</loc>
     <lastmod>2026-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://otis-sia.github.io/Me/projects.html</loc>
+    <loc>https://sia.cepine.com/projects.html</loc>
     <lastmod>2026-09-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://otis-sia.github.io/Me/scouting.html</loc>
+    <loc>https://sia.cepine.com/scouting.html</loc>
     <lastmod>2026-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://otis-sia.github.io/Me/contact.html</loc>
+    <loc>https://sia.cepine.com/contact.html</loc>
     <lastmod>2026-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://otis-sia.github.io/Me/downloads.html</loc>
+    <loc>https://sia.cepine.com/downloads.html</loc>
     <lastmod>2026-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
