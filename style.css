@@ -1942,8 +1942,31 @@ ul {
   .cv-name, .cv-section-title, .cv-role {
     color: black !important;
   }
-  /* Remove page break if possible inside items */
-  li, p, h1, h2, h3 {
-    page-break-inside: avoid;
+  
+  /* Prevent page breaks from splitting related content */
+  h1, h2, h3, .cv-section-title, .cv-role {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+  
+  .cv-meta {
+    page-break-before: avoid !important;
+    break-before: avoid !important;
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  ul, p {
+    page-break-before: avoid !important;
+    break-before: avoid !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  li {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
   }
 }
