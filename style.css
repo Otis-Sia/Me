@@ -1925,3 +1925,25 @@ ul {
       max-width: 560px;
       margin: 0 auto 2.5rem;
     }
+
+/* Print specific styles for the CV */
+@media print {
+  .navbar, .footer, .back-to-top, .download-btn-container {
+    display: none !important;
+  }
+  .resume-container {
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .cv-name, .cv-section-title, .cv-role {
+    color: black !important;
+  }
+  /* Remove page break if possible inside items */
+  li, p, h1, h2, h3 {
+    page-break-inside: avoid;
+  }
+}
