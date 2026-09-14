@@ -30,6 +30,12 @@ Dedicated Diploma in Information Technology Graduate with practical experience i
 
 ## EXPERIENCE
 
+**Full-Stack Web Developer**  
+*Scouts Emergency Response (SER)*  
+*July 2026 – Present*
+- Architected and single-handedly engineered a full-stack emergency coordination platform from the ground up.
+- Currently steering the platform's ongoing lifecycle management, ensuring high availability and seamless dynamic content delivery.
+
 **Frontend Web Developer**  
 *Arieries World*  
 *July 2026 – Present*
