@@ -30,6 +30,24 @@ Dedicated Diploma in Information Technology Graduate with practical experience i
 
 ## EXPERIENCE
 
+**Frontend Web Developer**  
+*Arieries World*  
+*July 2026 – Present*
+- Crafting immersive, pixel-perfect frontend architectures that breathe life into the digital presence of Arieries World.
+- Translating intricate UI/UX visions into responsive, high-performance web components.
+
+**Marketing Specialist**  
+*Ambulex*  
+*May 2026 – July 2026*
+- Spearheaded direct-to-consumer initiatives, using empathetic storytelling to educate the public and close ambulance insurance policies.
+- Drove a fast-paced sales campaign, breaking down complex policies into irresistible value propositions.
+
+**Marketing Specialist**  
+*Nyota Fibre*  
+*February 2026 – May 2026*
+- Orchestrated high-impact grassroots marketing campaigns to drive internet subscription acquisitions.
+- Translated technical ISP jargon into compelling value propositions, successfully converting prospects into loyal subscribers.
+
 **Industrial Attaché**  
 *Sikri Technical Vocational College for the Blind and Deaf (STVCBD), Oyugis, Kenya*  
 *May 2025 – August 2025*
@@ -51,9 +69,13 @@ Dedicated Diploma in Information Technology Graduate with practical experience i
 - Technologies used: HTML, CSS, JavaScript, MySQL.
 
 **SER – Scout Emergency Rescue Platform**
-- Developed a responsive web platform with backend integration to support emergency coordination and structured information management.
-- Implemented database connectivity for dynamic content handling.
+- Architected and single-handedly engineered a full-stack emergency coordination platform from the ground up.
+- Currently steering the platform's ongoing lifecycle management, ensuring high availability and seamless dynamic content delivery.
 - Designed a user-friendly interface optimized for clarity and quick access to critical information.
+
+**Custom E-Commerce Platform**
+- Designed and deployed a bespoke, fully functional e-commerce platform, integrating seamless digital storefront mechanics.
+- Engineered intuitive shopping workflows from product discovery to secure checkout, demonstrating robust end-to-end web capabilities.
 
 **Rent Management System (System Design Concept)**
 - Designed a multi-step approval workflow requiring dual administrative validation.
