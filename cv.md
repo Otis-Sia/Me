@@ -96,10 +96,11 @@ Dedicated Diploma in Information Technology Graduate with practical experience i
 
 ## TECHNICAL SKILLS
 
-- **Programming & Development:** HTML, CSS, C, C++, Java, SQL (MySQL), PostgreSQL
+- **Programming & Development:** HTML, CSS, C, C++, Java, SQL
+- **Databases:** MySQL, PostgreSQL, Microsoft Access
+- **Tools & Platforms:** Git, GitHub, Docker, Figma, Vercel, Render, Cloudflare, Supabase, Firebase, Visual Studio Code
 - **Networking:** LAN configuration, IP addressing & subnet basics, Router setup & troubleshooting
 - **Operating Systems:** Windows 10 & 11, Linux (Ubuntu, Linux Mint)
-- **Database & Tools:** Microsoft Access, MySQL, Visual Studio Code
 - **IT Support:** Hardware troubleshooting, Software installation & updates, User account management, System maintenance
 
 ## CERTIFICATIONS
