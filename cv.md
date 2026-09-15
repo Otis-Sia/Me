@@ -68,23 +68,23 @@ Dedicated Diploma in Information Technology Graduate with practical experience i
 
 ## PROJECTS
 
-**Advanced Attendance Logging System (Final Year Project)**
+**Advanced Attendance Logging System (Final Year Project)** — [GitHub Repo](https://github.com/Otis-Sia/FInalYear)
 - Designed and developed a backend-supported attendance management system to improve accuracy and accountability in attendance tracking.
 - Implemented secure login authentication and role-based access control.
 - Integrated database-driven logging system to prevent record tampering and maintain structured audit trails.
 - Developed an administrative dashboard for monitoring, report generation, and attendance analytics.
 - Technologies used: HTML, CSS, JavaScript, MySQL.
 
-**SER – Scout Emergency Rescue Platform**
+**SER – Scout Emergency Rescue Platform** — [GitHub Repo](https://github.com/Otis-Sia/SER)
 - Architected and single-handedly engineered a full-stack emergency coordination platform from the ground up.
 - Currently steering the platform's ongoing lifecycle management, ensuring high availability and seamless dynamic content delivery.
 - Designed a user-friendly interface optimized for clarity and quick access to critical information.
 
-**Custom E-Commerce Platform**
+**Custom E-Commerce Platform** — [GitHub Repo](https://github.com/Otis-Sia/Shop)
 - Designed and deployed a bespoke, fully functional e-commerce platform, integrating seamless digital storefront mechanics.
 - Engineered intuitive shopping workflows from product discovery to secure checkout, demonstrating robust end-to-end web capabilities.
 
-**Rent Management System (System Design Concept)**
+**Rent Management System (System Design Concept)** — [GitHub Repo](https://github.com/Otis-Sia/RentManagement)
 - Designed a multi-step approval workflow requiring dual administrative validation.
 - Implemented non-deletable audit log concept preserving override history.
 - Created database schema and ERD models for structured commercial deployment.
